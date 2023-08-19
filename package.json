@@ -78,6 +78,7 @@
     "react-emoji-render": "1.2.4",
     "react-focus-on": "3.8.1",
     "react-i18next": "10.11.4",
+    "react-icons": "^4.10.1",
     "react-linkify": "1.0.0-alpha",
     "react-native": "0.69.11",
     "react-native-background-timer": "2.4.1",

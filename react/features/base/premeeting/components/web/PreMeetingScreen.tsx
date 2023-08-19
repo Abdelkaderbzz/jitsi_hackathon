@@ -14,6 +14,7 @@ import { withPixelLineHeight } from '../../../styles/functions.web';
 import ConnectionStatus from './ConnectionStatus';
 import Preview from './Preview';
 import UnsafeRoomWarning from './UnsafeRoomWarning';
+import { button } from '../../../../participants-pane/components/native/styles';
 
 interface IProps {
 
@@ -192,7 +193,8 @@ const PreMeetingScreen = ({
                         </h1>
                         {_roomName && (
                             <span className = { classes.roomName }>
-                                {_roomName}
+                                {/* {_roomName} */}
+                                {/* aya sikan */}
                             </span>
                         )}
                         {children}

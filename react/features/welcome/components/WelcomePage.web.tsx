@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-
+import {BiConfused} from 'react-icons/bi'
 import { isMobileBrowser } from '../../base/environment/utils';
 import { translate, translateToHTML } from '../../base/i18n/functions';
 import Icon from '../../base/icons/components/Icon';
@@ -351,36 +351,45 @@ class WelcomePage extends AbstractWelcomePage<IProps> {
 
         const { fDroidUrl, downloadLink: androidDownloadLink } = android;
 
-        return (<footer className = 'welcome-footer'>
-            <div className = 'welcome-footer-centered'>
-                <div className = 'welcome-footer-padded'>
-                    <div className = 'welcome-footer-row-block welcome-footer--row-1'>
-                        <div className = 'welcome-footer-row-1-text'>{t('welcomepage.jitsiOnMobile')}</div>
-                        <a
-                            className = 'welcome-badge'
-                            href = { iosDownloadLink }>
-                            <img
-                                alt = { t('welcomepage.mobileDownLoadLinkIos') }
-                                src = './images/app-store-badge.png' />
-                        </a>
-                        <a
-                            className = 'welcome-badge'
-                            href = { androidDownloadLink }>
-                            <img
-                                alt = { t('welcomepage.mobileDownLoadLinkAndroid') }
-                                src = './images/google-play-badge.png' />
-                        </a>
-                        <a
-                            className = 'welcome-badge'
-                            href = { fDroidUrl }>
-                            <img
-                                alt = { t('welcomepage.mobileDownLoadLinkFDroid') }
-                                src = './images/f-droid-badge.png' />
-                        </a>
+        return (
+            <footer className="welcome-footer">
+                <div className="welcome-footer-centered">
+                    <div className="welcome-footer-padded">
+                        <div className="welcome-footer-row-block welcome-footer--row-1">
+                            <div className="welcome-footer-row-1-text">
+                                {t("welcomepage.jitsiOnMobile")}
+                            </div>
+
+                            <a className="welcome-badge" href={iosDownloadLink}>
+                                <img
+                                    alt={t("welcomepage.mobileDownLoadLinkIos")}
+                                    src="./images/app-store-badge.png"
+                                />
+                            </a>
+                            <a
+                                className="welcome-badge"
+                                href={androidDownloadLink}
+                            >
+                                <img
+                                    alt={t(
+                                        "welcomepage.mobileDownLoadLinkAndroid"
+                                    )}
+                                    src="./images/google-play-badge.png"
+                                />
+                            </a>
+                            <a className="welcome-badge" href={fDroidUrl}>
+                                <img
+                                    alt={t(
+                                        "welcomepage.mobileDownLoadLinkFDroid"
+                                    )}
+                                    src="./images/f-droid-badge.png"
+                                />
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>);
+            </footer>
+        );
     }
 
     /**

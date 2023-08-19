@@ -40,14 +40,14 @@ export default class Toolbar extends Component<IProps> {
     render() {
         const {
             className = '',
-            onMouseOut,
+            // onMouseOut,
             onMouseOver
         } = this.props;
 
         return (
             <div
                 className = { `toolbox-content-items always-on-top-toolbox ${className}` }
-                onMouseOut = { onMouseOut }
+                // onMouseOut = { onMouseOut }
                 onMouseOver = { onMouseOver }>
                 <AudioMuteButton />
                 <VideoMuteButton />

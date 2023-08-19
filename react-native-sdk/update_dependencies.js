@@ -36,13 +36,13 @@ function updateDependencies() {
         return;
     }
 
-    console.log(`
-=========================
-🚀 Your project was updated!
-🛠 Make sure you run npm install
-📱 If you are building for iOS run cd ios && pod install to link them.
-=========================
-`);
+//     console.log(`
+// =========================
+// 🚀 Your project was updated!
+// 🛠 Make sure you run npm install
+// 📱 If you are building for iOS run cd ios && pod install to link them.
+// =========================
+// `);
 
     packageJSON.dependencies = Object.keys(packageJSON.dependencies)
         .sort()
@@ -54,9 +54,6 @@ function updateDependencies() {
 
     fs.writeFileSync(pathToPackageJSON, JSON.stringify(packageJSON, null, 2));
 
-    console.log(
-        'All needed dependencies have been updated. \nPlease run npm install.'
-    );
 }
 
 updateDependencies();

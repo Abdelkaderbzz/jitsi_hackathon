@@ -77,7 +77,7 @@ async function _startScreenSharing(dispatch: IStore['dispatch'], state: IReduxSt
             }, NOTIFICATION_TIMEOUT_TYPE.LONG));
         }
     } catch (error: any) {
-        console.log('ERROR creating ScreeSharing stream ', error);
+        // console.log('ERROR creating ScreeSharing stream ', error);
 
         setPictureInPictureEnabled(true);
     }

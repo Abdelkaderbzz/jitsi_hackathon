@@ -8,7 +8,7 @@ const mainLang = require('./main.json');
 const [ targetLangFile ] = process.argv.slice(-1);
 
 if (!targetLangFile) {
-    console.log('No target language file specified');
+    // console.log('No target language file specified');
     process.exit(1);
 }
 

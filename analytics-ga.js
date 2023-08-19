@@ -8,8 +8,8 @@
         /* eslint-disable */
 
         if (!options.googleAnalyticsTrackingId) {
-            console.log(
-                'Failed to initialize Google Analytics handler, no tracking ID');
+            // console.log(
+            //     'Failed to initialize Google Analytics handler, no tracking ID');
              return;
         }
 

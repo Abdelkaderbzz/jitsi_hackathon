@@ -135,6 +135,7 @@ const ParticipantsPane = () => {
         return null;
     }
 
+
     return (
         <div className = 'participants_pane'>
             <div className = 'participants_pane-content'>
@@ -146,7 +147,7 @@ const ParticipantsPane = () => {
                 </div>
                 <div className = { classes.container }>
                     <LobbyParticipants />
-                    <br className = { classes.antiCollapse } />
+                    <br className={classes.antiCollapse} />
                     <MeetingParticipants
                         searchString = { searchString }
                         setSearchString = { setSearchString } />
